@@ -1,423 +1,141 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport"content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Frontend Assessment</title>
-
-  <link rel="stylesheet" href="style.css">
-
- 
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-<main class="main-wrapper">
-<section class="hero-section">
-<div class="swiper heroSwiper">
-        <div class="swiper-wrapper">
-           <div class="swiper-slide">
-            <div class="banner-box">
-              <div class="banner-text">
-                1920x1080
+  <div class="page-wrap">
+    <header class="topbar">Placement</header>
+
+    <main class="main-shell">
+      <section class="hero">
+        <div class="hero-slider" id="heroSlider">
+          <div class="hero-track">
+            <article class="hero-slide active">
+              <div class="hero-image">
+                <span class="dimension-text">1920x1080</span>
               </div>
+            </article>
 
-            </div>
-            <div class="banner-content">
-              <span class="small-text">
-                System
-              </span>
-               <h1>
-                Welcome Developer!
-              </h1>
-
-
-              <p>
-                Your goal is to become the frontend developer by using
-                HTML CSS JavaScript and responsive layouts.
-              </p>
-               <div class="button-group">
-
-                <button class="primary-btn">
-                  Shop Now
-                </button>
-
-                <button class="secondary-btn">
-                  Discover All
-                </button>
-
+            <article class="hero-slide">
+              <div class="hero-image">
+                <span class="dimension-text">1920x1080</span>
               </div>
+            </article>
 
-
-            </div>
-
-          </div>
-           <div class="swiper-slide">
-
-
-            <div class="banner-box">
-
-              <div class="banner-text">
-                1920x1080
+            <article class="hero-slide">
+              <div class="hero-image">
+                <span class="dimension-text">1920x1080</span>
               </div>
+            </article>
 
-            </div>
-
-
-
-            <div class="banner-content">
-
-
-              <span class="small-text">
-                System
-              </span>
-
-
-              <h1>
-                Frontend Learning
-              </h1>
-
-
-              <p>
-                Build responsive frontend applications using modern UI principles.
-              </p>
-              <div class="button-group">
-
-                <button class="primary-btn">
-                  Explore
-                </button>
-
-                <button class="secondary-btn">
-                  Read More
-                </button>
-
+            <article class="hero-slide">
+              <div class="hero-image">
+                <span class="dimension-text">1920x1080</span>
               </div>
+            </article>
 
-
-            </div>
-
+            <article class="hero-slide">
+              <div class="hero-image">
+                <span class="dimension-text">1920x1080</span>
+              </div>
+            </article>
           </div>
 
-
+          <button class="nav-arrow left" id="prevBtn">‹</button>
+          <button class="nav-arrow right" id="nextBtn">›</button>
+          <div class="dots" id="dots"></div>
         </div>
-        <div class="swiper-button-next"></div>
 
-        <div class="swiper-button-prev"></div>
-
-
+        <div class="hero-content">
+          <p class="eyebrow">Eyebrow</p>
+          <h1>Welcome Developer!</h1>
+          <p class="hero-desc">
+            Your goal is to translate the provided Figma designs into a living, functional interface. We value pixel-perfection;
+            <br>your output should match the design specifications exactly in terms of colour, spacing, typography, and visual
+            hierarchy.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-light">Shop Now</button>
+            <button class="btn btn-outline">Discover All</button>
+          </div>
+        </div>
+      </section>
 
       
-
-        <div class="swiper-pagination"></div>
-
-
-      </div>
-
-
-    </section>
-
-
-
-
-
-   
-
-    <section class="product-section">
-      <h2 class="section-heading">
-        Heading
-      </h2>
-
-
-
-      <div class="product-grid">
-        <div class="product-card">
-
-          <div class="card-image">
-
-            <div class="card-image-text">
-              462x710
+      <section class="products-section">
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-image" role="img" aria-label="Product image">
+              <span class="dimension-text small">462x710</span>
             </div>
-
-          </div>
-
-
-          <div class="card-content">
-
-            <span class="brand-name">
-              Brand Name
-            </span>
-
-
-            <h3>
-              Product Name
-            </h3>
-
-
-            <div class="price-wrapper">
-
-              <span class="new-price">
-                $99.99
-              </span>
-
-              <span class="old-price">
-                $129.99
-              </span>
-
+            <div class="product-meta">
+              <div>
+                <p>Brand Name</p>
+                <h3>Heading</h3>
+              </div>
+              <div class="price">
+                <span>$80.95</span>
+                <del>$90.95</del>
+              </div>
             </div>
+          </article>
 
+          <article class="product-card">
+            <div class="product-image" role="img" aria-label="Product image">
+              <span class="dimension-text small">462x710</span>
+            </div>
+            <div class="product-meta">
+              <div>
+                <p>Brand Name</p>
+                <h3>Heading</h3>
+              </div>
+              <div class="price">
+                <span>$80.95</span>
+                <del>$90.95</del>
+              </div>
+            </div>
+          </article>
 
-          </div>
+          <article class="product-card">
+            <div class="product-image" role="img" aria-label="Product image">
+              <span class="dimension-text small">462x710</span>
+            </div>
+            <div class="product-meta">
+              <div>
+                <p>Brand Name</p>
+                <h3>Heading</h3>
+              </div>
+              <div class="price">
+                <span>$80.95</span>
+                <del>$90.95</del>
+              </div>
+            </div>
+          </article>
 
+          <article class="product-card">
+            <div class="product-image" role="img" aria-label="Product image">
+              <span class="dimension-text small">462x710</span>
+            </div>
+            <div class="product-meta">
+              <div>
+                <p>Brand Name</p>
+                <h3>Heading</h3>
+              </div>
+              <div class="price">
+                <span>$80.95</span>
+                <del>$90.95</del>
+              </div>
+            </div>
+          </article>
         </div>
-
-
-
-
-
-      
-
-        <div class="product-card">
-
-          <div class="card-image">
-
-            <div class="card-image-text">
-              462x710
-            </div>
-
-          </div>
-
-
-          <div class="card-content">
-
-            <span class="brand-name">
-              Brand Name
-            </span>
-
-
-            <h3>
-              Product Name
-            </h3>
-
-
-            <div class="price-wrapper">
-
-              <span class="new-price">
-                $99.99
-              </span>
-
-              <span class="old-price">
-                $129.99
-              </span>
-
-            </div>
-
-
-          </div>
-
-        </div>
-
-
-
-
-
- 
-
-        <div class="product-card">
-
-          <div class="card-image">
-
-            <div class="card-image-text">
-              462x710
-            </div>
-
-          </div>
-
-
-          <div class="card-content">
-
-            <span class="brand-name">
-              Brand Name
-            </span>
-
-
-            <h3>
-              Product Name
-            </h3>
-
-
-            <div class="price-wrapper">
-
-              <span class="new-price">
-                $99.99
-              </span>
-
-              <span class="old-price">
-                $129.99
-              </span>
-
-            </div>
-
-
-          </div>
-
-        </div>
-
-
-
-
-
-   
-
-        <div class="product-card">
-
-          <div class="card-image">
-
-            <div class="card-image-text">
-              462x710
-            </div>
-
-          </div>
-
-
-          <div class="card-content">
-
-            <span class="brand-name">
-              Brand Name
-            </span>
-
-
-            <h3>
-              Product Name
-            </h3>
-
-
-            <div class="price-wrapper">
-
-              <span class="new-price">
-                $99.99
-              </span>
-
-              <span class="old-price">
-                $129.99
-              </span>
-
-            </div>
-
-
-          </div>
-
-        </div>
-
-
-      </div>
-
-
-    </section>
-
-
-
-
-
-    <!-- TABS SECTION -->
-
-    <section class="tabs-section">
-
-
-      <div class="tabs-wrapper">
-
-
-        <button
-          class="tab-button active"
-          data-tab="1"
-        >
-          Tab 1
-        </button>
-
-
-        <button
-          class="tab-button"
-          data-tab="2"
-        >
-          Tab 2
-        </button>
-
-
-        <button
-          class="tab-button"
-          data-tab="3"
-        >
-          Tab 3
-        </button>
-
-
-      </div>
-
-
-
-
-
-      <div
-        class="tab-content active"
-        id="tab-1"
-      >
-
-        <p>
-          This is content for tab one.
-        </p>
-
-      </div>
-
-
-
-
-
-      <div
-        class="tab-content"
-        id="tab-2"
-      >
-
-        <p>
-          This is content for tab two.
-        </p>
-
-      </div>
-
-
-
-
-
-      <div
-        class="tab-content"
-        id="tab-3"
-      >
-
-        <p>
-          This is content for tab three.
-        </p>
-
-      </div>
-
-
-    </section>
-
-
-
-  </main>
-
-
-
-
-
-  <!-- SWIPER JS -->
-
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      </section>
+    </main>
+  </div>
 
   <script src="script.js"></script>
-
 </body>
-
 </html>
