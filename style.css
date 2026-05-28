@@ -304,7 +304,6 @@ body {
   margin-left: 4px;
 }
 
-/* Tabs/Accordion Section */
 .tabs-section {
   padding: 40px 20px;
   background: #fff;
@@ -316,7 +315,6 @@ body {
   gap: 20px;
 }
 
-/* Desktop Tabs */
 .tabs-wrapper {
   display: none;
   border-bottom: 2px solid #ececec;
@@ -379,7 +377,7 @@ body {
   }
 }
 
-/* Mobile Accordion */
+
 .accordion-wrapper {
   display: grid;
   grid-template-columns: 1fr;
@@ -439,12 +437,11 @@ body {
 }
 
 @media (min-width: 769px) {
-  /* Show tabs on desktop */
+
   .tabs-wrapper {
     display: flex;
   }
 
-  /* Hide accordion on desktop */
   .accordion-wrapper {
     display: none;
   }
